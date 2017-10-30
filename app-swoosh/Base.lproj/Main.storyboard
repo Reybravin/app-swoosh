@@ -16,10 +16,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="bzx-vq-nS2">
             <objects>
-                <viewController id="Wxp-Ri-nOx" sceneMemberID="viewController">
+                <viewController id="Wxp-Ri-nOx" customClass="LeagueVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s41-5N-wnu"/>
                         <viewControllerLayoutGuide type="bottom" id="3sH-8A-6RI"/>
@@ -139,6 +139,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="Wxp-Ri-nOx" eventType="touchUpInside" id="mkj-9g-wS0"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="F7X-h7-QN7">
                                 <rect key="frame" x="16" y="156" width="343" height="187"/>
@@ -209,16 +212,19 @@
                             <constraint firstItem="pYz-sg-3XK" firstAttribute="leading" secondItem="gda-zJ-0aL" secondAttribute="leadingMargin" id="wX7-Kp-ZnT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="Ufw-at-bs2" kind="show" identifier="skillVCSegue" id="irD-fg-BaN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3W-BQ-Yvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="k0M-ZJ-5vf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="832.79999999999995" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="jkH-KC-Wkq">
             <objects>
-                <viewController id="Ufw-at-bs2" sceneMemberID="viewController">
+                <viewController id="Ufw-at-bs2" customClass="SkillVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qxb-lN-ig9"/>
                         <viewControllerLayoutGuide type="bottom" id="IN7-nb-U4v"/>
